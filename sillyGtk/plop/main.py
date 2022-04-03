@@ -1,11 +1,18 @@
 #! /usr/bin/env python3
 # -*- coding : utf-8 -*-
 
+"""TEMPLATE - Main executable"""
+
 import sillyGtk as sg
 import os
 
+# ==================   Silly GTK - main template  =====================
+# This template intends to give some basic elements and explainations,
+# just delete those you don't whant, and create some new.
+# The parameters marked '# required' are really required, the others are
+# shown to let you try different values but are optionnal.
 
-# MUST be in your main executable, some paths will be relative to this.
+# MUST be in your main executable, some paths will be relative to this:
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 # =====================================================================
 

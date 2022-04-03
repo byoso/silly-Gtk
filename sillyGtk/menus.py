@@ -4,6 +4,10 @@ from gi.repository import Gtk
 
 
 def create_menu_item(arg):
+    """
+    arg can be str (anything or '_separator'),
+    or a tuple (label, callback_function)
+    """
     if isinstance(arg, tuple):
         # tuple expected to be (label, callback)
         item = Gtk.MenuItem(arg[0])
