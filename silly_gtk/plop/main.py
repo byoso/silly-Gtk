@@ -3,8 +3,31 @@
 
 """TEMPLATE - Main executable"""
 
-import silly_gtk as sg
+
 import os
+
+# ====================== Dependencies check ===========================
+# With this the dependencies will be automaticly installed at the first
+# launch of your application.
+# You whant to respect the pep8 ? then move it in the
+# "if __name__ == '__main__':" of your main executable.
+
+import pkg_resources
+dependencies = [
+    'pycairo>=1.21.0',
+    'PyGObject>=3.42.0',
+    # add your own dependencies here
+]
+try:
+    pkg_resources.require(dependencies)
+except pkg_resources.DistributionNotFound:
+    os.system('pip install PyGObject')
+    # add your needed dependencies installs here
+
+# ===================== end of dependencies check =====================
+
+import silly_gtk as sg
+
 
 # ==================   Silly GTK - main template  =====================
 # This template intends to give some basic elements and explainations,
@@ -18,6 +41,7 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 
 # Here are some callbacks =============================================
+# your app should be MVC designed, this is just an example.
 def callback_plus(*args):
     print("Plus")
 
