@@ -3,7 +3,7 @@
 
 """TEMPLATE - Main executable"""
 
-import sillyGtk as sg
+import silly_gtk as sg
 import os
 
 # ==================   Silly GTK - main template  =====================

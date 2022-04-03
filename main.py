@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding : utf-8 -*-
 
-import sillyGtk as sg
+import silly_gtk as sg
 import os
 
 

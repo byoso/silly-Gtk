@@ -6,7 +6,7 @@ gi.require_version('AppIndicator3', '0.1')
 from gi.repository import Gtk, AppIndicator3
 import os
 
-from sillyGtk.menus import create_menu_item
+from silly_gtk.menus import create_menu_item
 
 
 class Indicator():
